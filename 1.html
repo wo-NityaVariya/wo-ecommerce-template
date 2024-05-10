@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GSAP Split Text Animation</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/SplitText.min.js"></script>
+  </head>
+  <body>
+    <section class="herosection">
+      <video
+        id="background-video"
+        autoplay
+        loop
+        muted
+        poster="https://assets.codepen.io/6093409/river.jpg"
+      >
+        <source
+          src="assets/videos/5928069-uhd_3840_2160_25fps.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div class="container hero-bg">
+        <div class="hero-text-container">
+          <p class="hero-text">
+            Experience the beauty <span id="text-img-1">of oceans view</span>
+            <span id="text-img-2">with us</span>
+            <span id="text-img-3">and</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Split the text and animate each word individually
+      const splitText = new SplitText(".hero-text", { words: true });
+      gsap.from(splitText.words, {
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        stagger: 0.1,
+        ease: "power4.out",
+      });
+    </script>
+  </body>
+</html>
