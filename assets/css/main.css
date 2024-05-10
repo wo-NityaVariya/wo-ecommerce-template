@@ -11,14 +11,14 @@
 /* fonts */
 @font-face {
   font-family: "Beatrice Trial";
-  src: url("/fonts/BeatriceTrial-Regular.woff2") format("woff2"), url("/fonts/BeatriceTrial-Regular.woff") format("woff");
+  src: url("../fonts/BeatriceTrial-Regular.woff2") format("woff2"), url("/fonts/BeatriceTrial-Regular.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Canela Text";
-  src: url("/fonts/BeatriceTrial-Regular.woff2") format("woff2"), url("/fonts/CanelaText-RegularNo2.woff") format("woff");
+  src: url("../fonts/BeatriceTrial-Regular.woff2") format("woff2"), url("/fonts/CanelaText-RegularNo2.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
